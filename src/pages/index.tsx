@@ -1,4 +1,5 @@
 import { getPosts, getUsers } from "@/api";
+import Pagination from "@/components/pagination";
 import { Post, User } from "@/utils/types";
 import {
   Button,
@@ -12,7 +13,6 @@ import { GetServerSideProps, GetStaticProps } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Pagination from "./components/pagination";
 
 interface Props {
   posts: Post[];
