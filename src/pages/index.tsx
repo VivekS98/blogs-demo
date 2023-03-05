@@ -40,7 +40,12 @@ export default function Home({ posts, users, page }: Props) {
               key={user.id}
               href={{ pathname: "/", query: { userId: user.id, page: 1 } }}
             >
-              <Button colorScheme="teal" variant="ghost">
+              <Button
+                justifyContent="flex-start"
+                width="full"
+                colorScheme="teal"
+                variant="ghost"
+              >
                 <Text pt="2" fontSize="lg">
                   {user.name}
                 </Text>
