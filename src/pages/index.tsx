@@ -32,7 +32,7 @@ export default function Home({ posts, users, page }: Props) {
 
       <main className="main">
         <aside className="users">
-          <Text pt="2" fontSize="3xl">
+          <Text pl="4" pt="2" fontSize="3xl">
             Users
           </Text>
           {users.map((user) => (
